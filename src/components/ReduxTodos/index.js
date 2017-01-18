@@ -4,23 +4,13 @@ import TodoInput from './TodoInput'
 import uuid from 'node-uuid'
 import {connect} from 'react-redux'
 
-class Todos extends React.Component {
+export default class Todos extends React.Component {
   render() {
     return (
       <div>
-        <TodoInput addTodo={this.addTodo} />
-        <TodoList
-          todos={this.props.todos}
-          deleteTodo={this.deleteTodo}
-          changeStatus={this.changeStatus}
-        />
+        <TodoInput />
+        <TodoList />
       </div>
     )
   }
 }
-
-export default connect((state) => {
-  return {
-    todos: state.todos
-  }
-})(Todos)
