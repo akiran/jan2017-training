@@ -4,7 +4,7 @@ import {Popover, OverlayTrigger, Button} from 'react-bootstrap'
 export default class BootstrapExamples  extends React.Component {
   render() {
     const popoverBottom = (
-      <Popover title="Popover bottom">
+      <Popover id='popover' title="Popover bottom">
         This is some text
       </Popover>
     );
