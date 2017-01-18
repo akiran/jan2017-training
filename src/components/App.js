@@ -9,11 +9,14 @@ import Timer from './Timer'
 import Bootstrap from './Bootstrap'
 import Events from './Events'
 import Todos from './Todos'
+import ReduxTodos from './ReduxTodos'
 
 export default class App extends React.Component {
   render() {
     return (
       <div className='container'>
+        <ReduxTodos />
+        <hr />
         <Todos />
         <hr />
         <Events />
