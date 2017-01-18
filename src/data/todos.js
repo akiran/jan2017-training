@@ -36,6 +36,6 @@ export default function todos(todos = defaultTodos, action) {
     case 'CHANGE_STAUTUS': return todos.map(todo => {
       return todo.id === action.payload.id ? {...todo, completed: !todo.completed} : todo
     })
+    default: return todos
   }
-  return todos
 }

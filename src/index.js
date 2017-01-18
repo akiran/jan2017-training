@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import store from './data/store'
 import {Provider} from 'react-redux'
-console.log(store)
+import './components/ReduxCounter'
+
 ReactDOM.render(
   <Provider store={store}>
     <App />

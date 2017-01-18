@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 
 class TodoList extends React.Component {
   render() {
-    const {todos, deleteTodo, changeStatus} = this.props
+    const {todos} = this.props
     return (
       <div>
         {todos.map((todo) => {

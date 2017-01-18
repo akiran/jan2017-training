@@ -21,6 +21,6 @@ export default function todoInput(state = '', action) {
   switch(action.type) {
     case 'CHANGE_TODO_INPUT': return action.payload.text
     case 'ADD_TODO': return ''
+    default: return state
   }
-  return state
 }
